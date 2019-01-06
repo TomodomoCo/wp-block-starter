@@ -7,8 +7,8 @@ import { registerBlockType } from '@wordpress/blocks'
 /**
  * Internal Dependencies
  */
-import Editor from './Editor'
-import Renderer from './Renderer'
+import Editor from './js/Editor'
+import Renderer from './js/Renderer'
 
 /**
  * Register slider block.

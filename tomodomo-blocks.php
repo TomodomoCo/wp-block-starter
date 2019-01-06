@@ -31,7 +31,7 @@ add_action('init', function () {
     // Loop through the blocks
     foreach ($blocks as $block) {
         // Build the path to the block class and instantiate it
-        $path  = "\\Tomodomo\\Blocks\\{$block}Block";
+        $path  = "\\Tomodomo\\Blocks\\{$block}\\{$block}Block";
         $block = new $path();
 
         // Define the block configuration

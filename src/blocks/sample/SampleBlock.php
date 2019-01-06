@@ -1,6 +1,9 @@
 <?php
 
-namespace Tomodomo\Blocks;
+namespace Tomodomo\Blocks\Sample;
+
+use Tomodomo\BlockLib\Block;
+use Tomodomo\BlockLib\BlockInterface;
 
 class SampleBlock extends Block implements BlockInterface
 {

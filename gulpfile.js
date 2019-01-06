@@ -36,7 +36,7 @@ gulp.task('css', () => {
     ],
   }
 
-  let stream = gulp.src('src/assets/sass/*.scss')
+  let stream = gulp.src('src/index.scss')
     .pipe(sassglob())
     .pipe(sourcemaps.init())
     .pipe(sass(eyeglass(sassConfig)).on('error', sass.logError))
@@ -67,7 +67,7 @@ gulp.task('js', () => {
   // Grab the config file
   let webpackConfig = require('./webpack.config.js')
 
-  gulp.src('src/assets/js/index.js')
+  gulp.src('src/index.js')
     .pipe(webpack(webpackConfig[options.env]))
     .pipe(gulp.dest('build/assets/js/'))
 })

@@ -25,7 +25,10 @@
   "autoload": {
     "psr-4": {
       "Tomodomo\\Blocks\\": [
-        "src/"
+        "src/blocks/"
+      ],
+      "Tomodomo\\BlockLib\\": [
+        "src/lib/"
       ]
     }
   }

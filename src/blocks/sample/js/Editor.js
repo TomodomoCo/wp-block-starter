@@ -21,7 +21,7 @@ const Editor = (props) => {
         {...{...props}}
       />
       <ServerSideRender
-        block="tomodomo/block"
+        block="tomodomo/sample"
         attributes={props.attributes}
       />
     </Fragment>

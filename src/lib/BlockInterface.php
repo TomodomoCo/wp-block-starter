@@ -1,6 +1,6 @@
 <?php
 
-namespace Tomodomo\Blocks;
+namespace Tomodomo\BlockLib;
 
 interface BlockInterface
 {

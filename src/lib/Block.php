@@ -1,6 +1,6 @@
 <?php
 
-namespace Tomodomo\Blocks;
+namespace Tomodomo\BlockLib;
 
 class Block
 {
@@ -11,8 +11,8 @@ class Block
      */
     public function __construct()
     {
-        $this->dir = plugin_dir_path(__DIR__);
-        $this->url = plugin_dir_url(__DIR__);
+        $this->dir = plugin_dir_path(dirname(__DIR__));
+        $this->url = plugin_dir_url(dirname(__DIR__));
 
         return;
     }
