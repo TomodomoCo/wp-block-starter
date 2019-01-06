@@ -3,6 +3,7 @@ const _ = require('lodash')
 const externals = {
   jquery: 'jQuery',
   lodash: 'lodash',
+  react: 'React',
 }
 
 // WordPress dependences
@@ -24,8 +25,8 @@ const wpDependencies = [
 wpDependencies.forEach(wpDependency => {
   externals['@wordpress/' + wpDependency] = {
     this: ['wp', wpDependency]
-  };
-});
+  }
+})
 
 // Set the defaults
 const defaults = {
@@ -46,9 +47,13 @@ const defaults = {
       },
     ],
   },
+  resolve: {
+    modules: [__dirname, "node_modules"]
+  },
   externals,
   output: {
     filename: 'script.js',
+    libraryTarget: 'this',
   },
 }
 

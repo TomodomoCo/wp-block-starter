@@ -21,9 +21,9 @@ registerBlockType('torrentfreak/opt-in', {
     __('form'),
   ],
   icon: {
-    background: '#00A7EB',
+    background: '#FF0092',
     foreground: '#FFFFFF',
-    src: '',
+    src: 'arrow-left-alt',
   },
   category: 'widgets',
   attributes: {
