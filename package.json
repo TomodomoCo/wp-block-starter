@@ -2,12 +2,9 @@
   "name": "@torrentfreak/blocks",
   "devDependencies": {
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
     "@wordpress/babel-preset-default": "^3.0.1",
     "autoprefixer": "^9.3.0",
     "babel-loader": "^8.0.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
     "eyeglass": "^1.6.0",
     "gulp": "^3.9.0",
     "gulp-concat": "*",
@@ -16,13 +13,9 @@
     "gulp-sass-glob": "^1.0.6",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-util": "*",
-    "lerna": "^2.11.0",
     "minimist": "^1.2.0",
     "node-sass-asset-functions": "0.*",
     "resize-observer-polyfill": "^1.5.0",
-    "sanitize.css": "^8.0.0",
-    "svgxuse": "^1.2.6",
-    "twig-markdown": "^0.2.1",
     "webpack-stream": "^5.1.1"
   },
   "scripts": {

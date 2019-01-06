@@ -66,7 +66,6 @@ gulp.task('css', () => {
 gulp.task('js', () => {
   // Grab the config file
   let webpackConfig = require('./webpack.config.js')
-  console.log(webpackConfig)
 
   gulp.src('src/assets/js/index.js')
     .pipe(webpack(webpackConfig[options.env]))

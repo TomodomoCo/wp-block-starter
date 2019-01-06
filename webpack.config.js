@@ -8,18 +8,18 @@ const externals = {
 
 // WordPress dependences
 const wpDependencies = [
-  'components',
-  'element',
+  'apiRequest',
   'blocks',
-  'hooks',
-  'editor',
-  'utils',
-  'date',
+  'components',
   'data',
-  'i18n',
+  'date',
+  'editor',
   'editPost',
+  'element',
+  'hooks',
+  'i18n',
   'plugins',
-  'apiRequest'
+  'utils',
 ]
 
 wpDependencies.forEach(wpDependency => {
@@ -28,7 +28,9 @@ wpDependencies.forEach(wpDependency => {
   }
 })
 
-// Set the defaults
+/**
+ * Webpack configuration defaults
+ */
 const defaults = {
   watch: true,
   module: {
@@ -41,6 +43,9 @@ const defaults = {
           options: {
             presets: [
               '@wordpress/default',
+            ],
+            plugins: [
+              ['@babel/transform-react-jsx', { 'pragma': 'wp.element.createElement' }],
             ],
           },
         },
