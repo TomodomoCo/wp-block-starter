@@ -1,12 +1,20 @@
+/**
+ * External dependencies
+ */
 const _ = require('lodash')
 
+/**
+ * Define externals
+ */
 const externals = {
   jquery: 'jQuery',
   lodash: 'lodash',
   react: 'React',
 }
 
-// WordPress dependences
+/**
+ * WordPress dependences
+ */
 const wpDependencies = [
   'apiRequest',
   'blocks',
@@ -45,7 +53,7 @@ const defaults = {
               '@wordpress/default',
             ],
             plugins: [
-              ['@babel/transform-react-jsx', { 'pragma': 'wp.element.createElement' }],
+              ['@babel/transform-react-jsx', {'pragma': 'wp.element.createElement'}],
             ],
           },
         },
@@ -62,7 +70,9 @@ const defaults = {
   },
 }
 
-// Build the whole config
+/**
+ * Build the whole config for each stage
+ */
 const config = {
   dev: _.defaults(
     {

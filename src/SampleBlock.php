@@ -1,8 +1,8 @@
 <?php
 
-namespace TorrentFreak\Blocks;
+namespace Tomodomo\Blocks;
 
-class OptInBlock extends Block implements BlockInterface
+class SampleBlock extends Block implements BlockInterface
 {
     /**
      * The block name
@@ -11,7 +11,7 @@ class OptInBlock extends Block implements BlockInterface
      */
     public function name() : string
     {
-        return 'torrentfreak/opt-in';
+        return 'tomodomo/sample';
     }
 
     /**
@@ -23,7 +23,7 @@ class OptInBlock extends Block implements BlockInterface
     {
 		// Register the block editor JS
 		wp_register_script(
-			'tf-blocks-editor-script',
+			'tomodomo-sample-editor-script',
 			$this->url . 'build/assets/js/script.js',
 			[
 				'wp-blocks',
@@ -34,7 +34,7 @@ class OptInBlock extends Block implements BlockInterface
 		);
 
         return [
-            'editor_script' => 'tf-blocks-editor-script',
+            'editor_script' => 'tomodomo-sample-editor-script',
         ];
     }
 
@@ -55,6 +55,6 @@ class OptInBlock extends Block implements BlockInterface
      */
     public function render() : string
     {
-        return 'Hello, I am a block';
+        return 'Hello, I am a block.';
     }
 }

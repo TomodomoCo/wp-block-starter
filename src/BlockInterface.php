@@ -1,6 +1,6 @@
 <?php
 
-namespace TorrentFreak\Blocks;
+namespace Tomodomo\Blocks;
 
 interface BlockInterface
 {

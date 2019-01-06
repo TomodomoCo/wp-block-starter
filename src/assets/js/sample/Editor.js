@@ -21,7 +21,7 @@ const Editor = (props) => {
         {...{...props}}
       />
       <ServerSideRender
-        block="torrentfreak/opt-in"
+        block="tomodomo/block"
         attributes={props.attributes}
       />
     </Fragment>

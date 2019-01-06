@@ -1,5 +1,5 @@
 {
-  "name": "@torrentfreak/blocks",
+  "name": "@tomodomo/blocks",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@wordpress/babel-preset-default": "^3.0.1",
@@ -15,7 +15,6 @@
     "gulp-util": "*",
     "minimist": "^1.2.0",
     "node-sass-asset-functions": "0.*",
-    "resize-observer-polyfill": "^1.5.0",
     "webpack-stream": "^5.1.1"
   },
   "scripts": {

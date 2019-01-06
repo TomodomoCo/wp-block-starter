@@ -1,4 +1,4 @@
 /**
  * Import the blocks
  */
-import './opt-in/index.js'
+import './sample/index.js'

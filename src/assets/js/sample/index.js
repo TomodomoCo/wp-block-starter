@@ -13,15 +13,14 @@ import Renderer from './Renderer'
 /**
  * Register slider block.
  */
-registerBlockType('torrentfreak/opt-in', {
-  title: __('TF: Opt-In'),
+registerBlockType('tomodomo/sample', {
+  title: __('Tomodomo: Sample'),
   keyword: [
-    __('optin'),
-    __('email'),
-    __('form'),
+    __('sample'),
+    __('keyword'),
   ],
   icon: {
-    background: '#FF0092',
+    background: '#963F69',
     foreground: '#FFFFFF',
     src: 'arrow-left-alt',
   },
