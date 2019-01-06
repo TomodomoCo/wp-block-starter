@@ -1,1 +1,4 @@
-import './block/index.js'
+/**
+ * Import the blocks
+ */
+import './opt-in/index.js'

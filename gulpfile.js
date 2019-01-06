@@ -67,7 +67,7 @@ gulp.task('js', () => {
   // Grab the config file
   let webpackConfig = require('./webpack.config.js')
 
-  gulp.src('src/assets/js/script.js')
+  gulp.src('src/assets/js/index.js')
     .pipe(webpack(webpackConfig[options.env]))
     .pipe(gulp.dest('build/assets/js/'))
 })

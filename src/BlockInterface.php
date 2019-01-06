@@ -1,5 +1,7 @@
 <?php
 
+namespace TorrentFreak\Blocks;
+
 interface BlockInterface
 {
     /**

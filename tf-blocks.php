@@ -18,6 +18,7 @@ if (file_exists("{$dir}/build/composer/autoload.php")) {
     require "{$dir}/build/composer/autoload.php";
 }
 
+add_action('init', function () {
 // Block classes to instantiate
 $blocks = [
     'OptIn',
@@ -43,5 +44,6 @@ foreach ($blocks as $block) {
     }
 
     // Register the block type
-    register_block_type($block->name(), $attributes);
+    register_block_type($block->name(), $config);
 }
+});

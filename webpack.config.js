@@ -1,9 +1,9 @@
 const _ = require('lodash')
 
-const externals = [
+const externals = {
   jquery: 'jQuery',
   lodash: 'lodash',
-]
+}
 
 // WordPress dependences
 const wpDependencies = [
@@ -38,7 +38,9 @@ const defaults = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
+            presets: [
+              '@wordpress/default',
+            ],
           },
         },
       },

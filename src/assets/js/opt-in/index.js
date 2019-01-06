@@ -14,7 +14,7 @@ import Renderer from './Renderer'
  * Register slider block.
  */
 registerBlockType('torrentfreak/opt-in', {
-  title: __('Opt-In'),
+  title: __('TF: Opt-In'),
   keyword: [
     __('optin'),
     __('email'),
@@ -34,4 +34,3 @@ registerBlockType('torrentfreak/opt-in', {
   edit: Editor,
   save: Renderer,
 })
-
