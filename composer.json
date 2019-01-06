@@ -1,0 +1,32 @@
+{
+  "name": "torrentfreak/blocks",
+  "description": "Custom TorrentFreak blocks for WordPress",
+  "type": "wordpress-plugin",
+  "license": "Proprietary",
+  "authors": [
+    {
+      "name": "Tomodomo",
+      "email": "hello@tomodomo.co"
+    }
+  ],
+  "config": {
+    "vendor-dir": "build/composer",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-name": "tf-blocks"
+  },
+  "repositories": [],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "TorrentFreak\\Blocks\\": [
+        "src/"
+      ]
+    }
+  }
+}
